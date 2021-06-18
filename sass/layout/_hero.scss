@@ -1,0 +1,70 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--two-color);
+
+    .hero__title {
+        width: 696px;
+        margin: 0 auto 30px;
+        color: var(--white-color);
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.5;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+}
+.hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/studio/team.img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--end-color);
+}
+
+/* Ретина 2x и 0 - 767px */
+@media (min-device-pixel-ratio:2) and (max-width: 767px),
+(min-resolution: 192dpi) and (max-width: 767px),
+(min-resolution: 2dppx) and (max-width: 767px) {
+.hero {
+    background-image:url("")
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero{
+    background-image:url("")
+    }
+}
+/* Ретина 2x и 768+ */
+@media (min-device-pixel-ratio:2) and (min-width: 768px),
+(min-resolution: 192dpi) and (min-width: 768px),
+(min-resolution: 2dppx) and (min-width: 768px) {
+.hero {
+    background-image:url("")
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero{
+    background-image:url("")
+    }
+}
+/* Ретина 2x и 1200+ */
+@media (min-device-pixel-ratio:2) and (min-width: 1200px),
+(min-resolution: 192dpi) and (min-width: 1200px),
+(min-resolution: 2dppx) and (min-width: 1200px) {
+.hero {
+    background-image:url("")
+    }
+}
