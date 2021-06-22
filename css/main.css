@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --main-color: #212121;
   --second-color: #757575;
@@ -637,6 +638,55 @@ img {
   background-color: var(--end-color);
 }
 
+/* Ретина 2x и 0 - 767px */
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/header.img@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--end-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/studio/header.img768.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--end-color);
+  }
+}
+/* Ретина 2x и 768+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/header.1.img@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--end-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url("../images/studio/header.img1600.jpg");
+  }
+}
+/* Ретина 2x и 1200+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/header.2.img@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--end-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url("../images/studio/header.img1600.jpg");
+  }
+}
 .features {
   padding-bottom: 47px;
 }
