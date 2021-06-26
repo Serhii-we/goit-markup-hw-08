@@ -9,7 +9,7 @@
     background-color: var(--two-color);
 
     .hero__title {
-        width: 696px;
+        max-width: 696px;
         margin: 0 auto 30px;
         color: var(--white-color);
         font-weight: 900;
@@ -30,6 +30,23 @@
     background-position: center;
     background-size: cover;
     background-color: var(--end-color);
+}
+/* Ретина 2x и 1200+ */
+@media (min-device-pixel-ratio:2) and (min-width: 1200px),
+(min-resolution: 192dpi) and (min-width: 1200px),
+(min-resolution: 2dppx) and (min-width: 1200px) {
+.hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/studio/header.2.img@2x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--end-color);
+    }
 }
 
 /* Ретина 2x и 0 - 767px */
@@ -80,23 +97,6 @@
 @media screen and (min-width: 1200px) {
     .hero{
     background-image:url("../images/studio/header.img1600.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: var(--end-color);
-    }
-}
-/* Ретина 2x и 1200+ */
-@media (min-device-pixel-ratio:2) and (min-width: 1200px),
-(min-resolution: 192dpi) and (min-width: 1200px),
-(min-resolution: 2dppx) and (min-width: 1200px) {
-.hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/studio/header.2.img@2x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -72,7 +72,24 @@
       letter-spacing: 0.03em;
     }
 }
-.team,
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
+/*.team,
 .title {
     text-align: center;
     margin-bottom: 50px;
@@ -81,4 +98,4 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--main-color);
-  }
+  }*/

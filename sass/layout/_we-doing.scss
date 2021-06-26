@@ -47,3 +47,11 @@
 .doing__list .doing__item {
     position: relative;
     }
+.doing {
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    .doing {
+        display: block;
+    }
+}

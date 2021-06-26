@@ -17,12 +17,21 @@
       <div class="container header__container">
       <nav class="header__navigation">
         <a class="logo__link link animate__flipInY" href="./index.html" lang="en"><span>Web</span>Studio</a>
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link current" href="">Студия</a></li>
-          <li class="menu__item"><a class="menu__link link" href="./portfolio.html">Портфолио</a></li>
-          <li class="menu__item"><a class="menu__link link" href="">Контакты</a></li>
+        <ul class="menu list">
+          <li class="menu__item">
+            <a class="menu__link current" href="">Студия</a></li>
+          <li class="menu__item">
+            <a class="menu__link link" href="./portfolio.html">Портфолио</a></li>
+          <li class="menu__item">
+            <a class="menu__link link" href="">Контакты</a></li>
         </ul>
       </nav>
+      <button type="button" class="header__menu-mobile-btn" data-menu-button>
+        <svg class="header__menu-mobile-icon">
+          <use href="./images/sprite.svg#icon-menu-burger"></use>
+        </svg>
+      </button>
+      
       <ul class="menu__two list">
         <li class="menu__item">
           <a class="contacts__link link" href="mailto:info@devstudio.com">
@@ -34,6 +43,79 @@
           </li>
       </ul>
     </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu__container" data-menu>
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                  <svg class="close-btn">
+            <use href="./images/svg#icon-close">
+            </use>
+                  </svg>
+          </button>
+          <ul class="mobile-menu__nav list">
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link" link current>Студия</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link" link>Портфолио</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link" link>Контакты</a></li>
+          </ul>
+  
+          <div class="mobile-menu__address-link">
+        <ul class="mobile-menu__contacts-list">
+        <li class="contacts-list__item link">
+          <a class="contacts-link"  href="tel:+380961111111">+380961111111</a>
+        </li>
+        <li class="contacts-list__item link">
+          <a class="contacts-link"  href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        </ul>
+        <ul class="mobile-menu__social-list">
+        <li class="social-list__item">
+          <a href="" class="social-list__link" link></a>Instagram</li>
+        <li class="social-list__item">
+          <a href="" class="social-list__link" link></a>Twitter</li>
+        <li class="social-list__item">
+          <a href="" class="social-list__link" link></a>Facebook</li>
+        <li class="social-list__item">
+          <a href="" class="social-list__link" link></a>Linkedin</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+<!--  <div class="mobile-menu">
+    <div class="mobile-menu__container" data-menu>
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                <svg class="close-btn">
+          <use href="./images/svg#icon-close">
+          </use>
+                </svg>
+        </button>
+        <ul class="mobile-menu__nav list">
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link" link current>Студия</a></li>
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link" link>Портфолио</a></li>
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link" link>Контакты</a></li>
+        </ul>
+
+        <div class="mobile-menu__address-link">
+      <ul class="mobile-menu__contacts-list">
+      <li class="contacts-list__item link">
+        <a class="contacts-link"  href="tel:+380961111111">+380961111111</a>
+      </li>
+      <li class="contacts-list__item link">
+        <a class="contacts-link"  href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      </ul>
+      <ul class="mobile-menu__social-list">
+      <li class="social-list__item">
+        <a href="" class="social-list__link" link></a>Instagram</li>
+      <li class="social-list__item">
+        <a href="" class="social-list__link" link></a>Twitter</li>
+      <li class="social-list__item">
+        <a href="" class="social-list__link" link></a>Facebook</li>
+      <li class="social-list__item">
+        <a href="" class="social-list__link" link></aLinkedin></li>
+      </ul>
+      </div>
+      </div>
+      </div>-->
+
     </header>
     <!--Герой-->
     <main>
@@ -88,24 +170,21 @@
         <ul class="doing__list">
           <li class="doing__item">
             <picture class="picture">
-              <source srcset="./images/studio/img.doing@2x.1.jpg 2x" media="(min-width: 1200px)"
-              type="image/webp">
+              <source srcset="./images/studio/img.doing@2x.1.jpg 2x" media="(min-width: 1200px)">
             </picture>
-            <img src="./images/studio/img.jpg" alt="Image1" width="370">
+            <img src="images/studio/img.jpg" alt="Image1">
             <p class="description__item">Десктопные приложения</p></li>
             <li class="doing__item">
             <picture class="picture">
-              <source srcset="./images/studio/img.doing@2x.3.jpg 2x" media="(min-width: 1200px)"
-              type="image/webp">
+              <source srcset="./images/studio/img.doing@2x.3.jpg 2x" media="(min-width: 1200px)">
             </picture>
-              <img src="./images/studio/img1.jpg" alt="Image2" width="370">
+              <img src="images/studio/img1.jpg" alt="Image2">
             <p class="description__item">Мобильные приложения</p></li>
             <li class="doing__item">
             <picture class="picture">
-              <source srcset="./images/studio/img.doing@2x.2.jpg 2x" media="(min-width: 1200px)"
-              type="image/webp">
+              <source srcset="./images/studio/img.doing@2x.2.jpg 2x" media="(min-width: 1200px)">
             </picture>
-              <img src="./images/studio/img2.jpg" alt="Image3" width="370">
+              <img src="images/studio/img2.jpg" alt="Image3">
             <p class="description__item">Дизайнерские решения</p></li>
         </ul>
       </div>
@@ -127,7 +206,7 @@
         <source srcset="./images/studio/team.img@1x.webp 1x, ./images/studio/team.1.img@2x.webp 2x" media="(min-width: 280px)" 
             type="image/webp">
         <source srcset="./images/studio/team.img@1x.jpg 1x, ./images/studio/team.1.img@2x.jpg 2x" media="(min-width: 280px)">
-        <img class="team__list-img" src="./images/studio/team1.jpg" alt="img team" width="270">
+        <img class="team__list-img" src="./images/studio/team1.jpg" alt="img team">
       </picture>
 
         <div class="team__card">
@@ -165,7 +244,7 @@
         <source srcset="./images/studio/team.1.img@1x.webp 1x, ./images/studio/team.2.img@2x.webp 2x" media="(min-width: 280px)"
             type="image/webp">
         <source srcset="./images/studio/team.1.img@1x.jpg 1x, ./images/studio/team.2.img@2x.jpg 2x" media="(min-width: 280px)">
-        <img class="team__list-img" src="./images/studio/team2.jpg" alt="img team one" width="270">
+        <img class="team__list-img" src="./images/studio/team2.jpg" alt="img team one">
       </picture>
 
             <div class="team__card">
@@ -203,8 +282,7 @@
           <source srcset="./images/studio/team.2.img@1x.webp 1x, ./images/studio/team.3.img@2x.webp 2x" media="(min-width: 280px)"
               type="image/webp">
           <source srcset="./images/studio/team.2.img@1x.jpg 1x, ./images/studio/team.3.img@2x.jpg 2x" media="(min-width: 280px)">
-            <img  class="team__list-img" src="./images/studio/team3.jpg" alt="img team two" width="270">
-        </picture>
+            <img  class="team__list-img" src="./images/studio/team3.jpg" alt="img team two">
             
             <div class="team__card">
             <h3 class="team__title">Николай Тарасов</h3>
@@ -242,7 +320,7 @@
           <source srcset="./images/studio/team.3.img@1x.webp 1x, ./images/studio/team.4.img@2x.webp 2x" media="(min-width: 280px)"
               type="image/webp">
           <source srcset="./images/studio/team.3.img@1x.jpg 1x, ./images/studio/team.4.img@2x.jpg 2x" media="(min-width: 280px)">
-          <img  class="team__list-img" src="./images/studio/team4.jpg" alt="img team three" width="270">
+          <img  class="team__list-img" src="./images/studio/team4.jpg" alt="img team three">
         </picture>
 
           <div class="team__card">

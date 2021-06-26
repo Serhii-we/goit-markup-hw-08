@@ -1,0 +1,47 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white-color);
+    overflow: auto;
+
+
+    &__container {
+        position: relative;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 25px;
+    }
+    &__close-btn {
+        border: none;
+        position: absolute;
+        border-radius: 50%;
+        top: 10px;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        box-sizing: border-box;
+        cursor: pointer;
+        padding: 0;
+        transition: transform 250ms var(--timing-func);
+            
+        &:hover,
+        &:focus  {
+        fill: var(--hover-color);
+        transition: transform 250ms var(--timing-func);
+    }
+    }
+}
+.close__btn {
+    color: var(--close-color);
+    width: 11px;
+    height: 11px;
+    .modal-close-btn:hover &,
+    .modal-close-btn:focus & {
+    fill: var(--hover-color);
+    transition: transform 250ms var(--timing-func);
+    }
+}
