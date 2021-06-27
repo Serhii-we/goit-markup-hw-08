@@ -1,47 +1,115 @@
-.mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--white-color);
-    overflow: auto;
-
-
+@media screen and (max-width: 767px) {
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--white-color);
+        overflow: auto;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    
     &__container {
-        position: relative;
-        padding-top: 48px;
-        padding-bottom: 48px;
-        padding-left: 25px;
-    }
-    &__close-btn {
-        border: none;
-        position: absolute;
-        border-radius: 50%;
-        top: 10px;
-        right: 0;
-        width: 40px;
-        height: 40px;
-        background-color: transparent;
-        box-sizing: border-box;
-        cursor: pointer;
-        padding: 0;
-        transition: transform 250ms var(--timing-func);
-            
-        &:hover,
-        &:focus  {
+            position: relative;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            padding-left: 25px;
+        }
+        &__coose-btn {
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            padding: 0;
+            fill: var(--close-color);
+            &:hover,
+            &:focus {
         fill: var(--hover-color);
         transition: transform 250ms var(--timing-func);
+        }
+            }
+            &__nav{
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 1.18;
+                letter-spacing: 0.02em;
+                margin-bottom: 302px;
+                color: var(--main-color);
+                cursor: pointer;
+            }
+            &__item{
+                margin-bottom: 32px;
+            }
+            &__link {
+                color: var(--main-color);
+                text-decoration: none;
+            }
+            &__contacts-list{
+                align-items: center;
+                margin-bottom: 64px;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 1.16;
+                letter-spacing: 0.02em;
+                fill: var(--second-color);
+                transition: color 250ms var(--timing-func);
+            }
+            &__social-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: -20px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1.22;
+                letter-spacing: 0.02em;
+                color: var(--hover-color);
+            }
     }
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .mobile-menu__item:not(:first-child) {
+        margin-bottom: 32px;
+    }
+    .contacts-list__item-two {
+        margin-top: 32px;
+    }
+    .social-list__item {
+        margin-left: 20px;
+    }
+    .contacts-link-one {
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--hover-color);
+    }
+    .contacts-link-two {
+        text-decoration: none;
+        color: var(--second-color);
+    }
+    .mobile-menu__link-one {
+        color: var(--main-color);
+        text-decoration: none;
+    }
+    .mobile-menu__link-one:hover,
+    .mobile-menu__link-one:focus,
+    .mobile-menu__link-one:active {
+        color: var(--hover-color);
+        transition: color 250ms var(--timing-func);
     }
 }
-.close__btn {
-    color: var(--close-color);
-    width: 11px;
-    height: 11px;
-    .modal-close-btn:hover &,
-    .modal-close-btn:focus & {
-    fill: var(--hover-color);
-    transition: transform 250ms var(--timing-func);
+@media screen and (min-width: 768px){
+    .mobile-menu {
+        display: none;
     }
 }
