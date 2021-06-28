@@ -953,6 +953,16 @@ img {
   color: var(--hover-color);
 }
 
+@media screen and (min-width: 768px) {
+  .menu__two {
+    display: block;
+    align-items: center;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;

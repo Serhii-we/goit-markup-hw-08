@@ -289,3 +289,12 @@ color: var(--hover-color);
 .tel__link:focus {
 color: var(--hover-color);
 }
+@media screen  and (min-width: 768px) {
+    .menu__two {
+        display: block;
+        align-items: center;
+    }
+    .menu__item:not(:last-child) {
+        margin-bottom: 10px;
+    } 
+}
