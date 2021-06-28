@@ -28,7 +28,18 @@
     }
   }
 }
-
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
 .team:nth-child(2n) {
     background-color: var(--new-color);
     margin-bottom: 0px;
@@ -109,7 +120,20 @@
   background-color: var(--white-color);
 } 
 }
-
+@media screen and (min-width: 480px) {
+  .title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+}
 /*.team,
 .title {
     text-align: center;
