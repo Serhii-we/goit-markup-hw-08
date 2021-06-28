@@ -30,11 +30,18 @@
     background-position: center;
     background-size: cover;
     background-color: var(--end-color);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--two-color)
 }
 /* Ретина 2x и 1200+ */
-@media (min-device-pixel-ratio:2) and (min-width: 1200px),
-(min-resolution: 192dpi) and (min-width: 1200px),
-(min-resolution: 2dppx) and (min-width: 1200px) {
+@media (min-device-pixel-ratio:2) and (max-width: 1200px),
+(min-resolution: 192dpi) and (max-width: 1200px),
+(min-resolution: 2dppx) and (max-width: 1200px) {
 .hero {
     background-image: linear-gradient(
         to right,
@@ -50,7 +57,7 @@
 }
 
 /* Ретина 2x и 0 - 767px */
-@media (min-device-pixel-ratio:2) and (max-width: 767px),
+@media (min-device-pixel-ratio:2)and (max-width: 767px),
 (min-resolution: 192dpi) and (max-width: 767px),
 (min-resolution: 2dppx) and (max-width: 767px) {
 .hero {
@@ -94,7 +101,9 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-device-pixel-ratio:2) and (max-width: 1200px),
+(min-resolution: 192dpi) and (max-width: 1200px),
+(min-resolution: 2dppx) and (max-width: 1200px) {
     .hero{
     background-image:url("../images/studio/header.img1600.jpg");
     background-repeat: no-repeat;

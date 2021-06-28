@@ -68,3 +68,31 @@
 .address__link:not(:last-child) {
     margin-bottom: 9px;
 }
+@media screen and (min-width: 1200px){
+.footer {
+    background-color:  var(--two-color);
+    padding-bottom: 60px;
+    padding-top: 60px;
+    text-align: center;
+}
+}
+@media screen and (min-width: 768px){
+.address{
+    margin-bottom: 60px;
+}
+.network__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+}
+@media screen and (min-width: 480px){
+    .container .footer__container {
+    width: 480px;
+    margin: auto;
+}
+}

@@ -1,6 +1,10 @@
 @media screen and (max-width: 767px) {
     .mobile-menu {
+        display: flex;
         position: fixed;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
         top: 0;
         left: 0;
         width: 100vw;
@@ -15,9 +19,15 @@
             position: relative;
             padding-top: 48px;
             padding-bottom: 48px;
-            padding-left: 25px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         &__coose-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: color;
             cursor: pointer;
             border: none;
             position: absolute;
@@ -45,6 +55,9 @@
             }
             &__item{
                 margin-bottom: 32px;
+            }
+            &__current {
+                color: var(--hover-color);
             }
             &__link {
                 color: var(--main-color);
@@ -102,8 +115,8 @@
         text-decoration: none;
     }
     .mobile-menu__link-one:hover,
-    .mobile-menu__link-one:focus,
-    .mobile-menu__link-one:active {
+    .mobile-menu__link-one:focus
+    {
         color: var(--hover-color);
         transition: color 250ms var(--timing-func);
     }
