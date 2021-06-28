@@ -33,17 +33,16 @@
             position: absolute;
             top: 10px;
             right: 0;
-            width: 40px;
-            height: 40px;
+            width: 18px;
+            height: 18px;
             background-color: transparent;
             padding: 0;
             fill: var(--close-color);
-            &:hover,
             &:focus {
         fill: var(--hover-color);
         transition: transform 250ms var(--timing-func);
-        }
             }
+        }
             &__nav{
                 font-weight: 500;
                 font-size: 40px;
@@ -84,11 +83,18 @@
                 letter-spacing: 0.02em;
                 color: var(--hover-color);
             }
+        }
+    .contacts-link-two {
+        text-decoration: none;
+        color: var(--second-color);
     }
     .mobile-menu.is-open {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+    }
+    .list .link__current {
+        color: var(--hover-color);
     }
     .mobile-menu__item:not(:first-child) {
         margin-bottom: 32px;
@@ -105,10 +111,6 @@
         letter-spacing: 0.02em;
         text-decoration: none;
         color: var(--hover-color);
-    }
-    .contacts-link-two {
-        text-decoration: none;
-        color: var(--second-color);
     }
     .mobile-menu__link-one {
         color: var(--main-color);
